@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "422172977068",
+    "firebase_url": "https://manan-mobile.firebaseio.com",
+    "project_id": "manan-mobile",
+    "storage_bucket": "manan-mobile.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:422172977068:android:e82a5ee1f1eb7fcac77c09",
+        "android_client_info": {
+          "package_name": "com.example.manan_mobile"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "422172977068-nu9nkn9s34dsvefn491rmnf68kab664g.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.manan_mobile",
+            "certificate_hash": "6aa505d59743b71de1cf7521227dd08b1aeeab41"
+          }
+        },
+        {
+          "client_id": "422172977068-9eh4qv567pj34nlaeb1i58uujh0tfc91.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.manan_mobile",
+            "certificate_hash": "e1193fa0d87fe680d76327230e24816869611a51"
+          }
+        },
+        {
+          "client_id": "422172977068-7ir47q106ca9fohfls0fug35ippq30qi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDFHhh7CKGHK9bDXzTanNu7peU4ejVyunc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "422172977068-7ir47q106ca9fohfls0fug35ippq30qi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
