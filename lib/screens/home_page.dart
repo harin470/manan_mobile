@@ -23,8 +23,7 @@ class _HomePageState extends State<HomePage> {
               Text("Sign Out")
           ),
           onPressed: () async{
-            User user = await _auth.signOut();
-            return user;
+             await _auth.signOut();
           },
         ),
       )

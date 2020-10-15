@@ -3,7 +3,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/cupertino.dart';
 import "package:flutter/material.dart";
 import 'package:manan_mobile/screens/home_page.dart';
-import 'package:manan_mobile/screens/login_page.dart';
+import 'file:///C:/Users/harin/AndroidStudioProjects/manan_mobile/lib/screens/login/login_page.dart';
 
 class LandingPage extends StatefulWidget {
   static String routeName ='/landing';

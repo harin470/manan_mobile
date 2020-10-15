@@ -1,3 +1,5 @@
+
+
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 import 'package:manan_mobile/models/userModel.dart';
@@ -13,6 +15,7 @@ class Auth {
   }
 
 
+
   // signing with user and pass
    Future signInWithEmailAndPassword(String email, String password) async {
     UserCredential credential = await _auth.signInWithEmailAndPassword(
@@ -20,6 +23,7 @@ class Auth {
     User user = credential.user;
     return user;
   }
+
 
 // google signin
   Future signInWithGoogle() async {
@@ -39,16 +43,21 @@ class Auth {
     return getFromFirebaseUser(user) ;
   }
   //register user using email and pass
-  Future registerUserWithEmailAndPass(String user, String pass){
-
+  Future registerUserWithEmailAndPass(String email, String pass) async{
+    UserCredential userCrdential = await _auth.createUserWithEmailAndPassword(email: email, password: pass);
+    User user= userCrdential.user;
+    return getFromFirebaseUser(user);
   }
 
   //signout
 Future signOut() async{
-     await _signIn.disconnect();
+     // await _signIn.disconnect();
      await _signIn.signOut();
      await _auth.signOut();
      return null;
+}
+Future resetPassword(String email) async{
+    await _auth.sendPasswordResetEmail(email: email);
 }
 }
 
