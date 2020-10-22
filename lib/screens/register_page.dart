@@ -238,13 +238,13 @@ class _RegisterFormState extends State<RegisterForm> {
               if (_formForgetPasswordKey.currentState.validate()) {
                 _formForgetPasswordKey.currentState.save();
                 if(errors.length==0){
-                  await _auth.registerUserWithEmailAndPass(email, pass).then((value){
-                    if(value != null){
-                      _firestoreMethods.addUserToFirebaseDb(value);
-                      Navigator.pop(context);
-                    }
-                  });
-                  //     Navigator.pushNamed(context, CompleteProfile.routeName);
+                  // await _auth.registerUserWithEmailAndPass(email, pass).then((value){
+                  //   if(value != null){
+                  //     _firestoreMethods.addUserToFirebaseDb(value);
+                  //     Navigator.pop(context);
+                  //   }
+                  // });
+                      Navigator.pushNamed(context, CompleteProfile.routeName);
 
                 }
               }

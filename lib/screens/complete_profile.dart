@@ -3,6 +3,7 @@ import "package:flutter/material.dart";
 import 'package:manan_mobile/form_field.dart';
 import 'package:manan_mobile/models/userModel.dart';
 import 'package:manan_mobile/screens/login/form_error.dart';
+import 'package:manan_mobile/screens/otp_screen.dart';
 import 'package:manan_mobile/services/firebase_auth/auth.dart';
 import 'package:manan_mobile/services/firestore/firestore_methods.dart';
 import 'package:manan_mobile/sized_config.dart';
@@ -225,7 +226,7 @@ class _CompleteProfilePageState extends State<CompleteProfilePage> {
                   //   }
                   // });
 
-
+                  Navigator.popAndPushNamed(context, OtpScreen.routeName);
                 }
               }
             }),
